@@ -1,5 +1,5 @@
 import React from 'react'
-import starLogo from '../src/assets/star.png'
+import starLogo from '../public/assets/star.png'
 
 function Card(props) {
     let badgeText
