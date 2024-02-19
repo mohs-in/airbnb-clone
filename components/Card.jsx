@@ -1,5 +1,8 @@
 import React from 'react'
 import starLogo from '../public/assets/star.png'
+import katie from '../public/assets/katie-zaferes.png'
+import mountain from '../public/assets/mountain-bike.png'
+import wedding from '../public/assets/wedding-photography.png'
 
 function Card(props) {
     let badgeText
