@@ -4,7 +4,7 @@
 
 body{
   margin: 0;
-  font-family: "Poppings", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -48,7 +48,7 @@ body{
 
 .card--lists {
   display: flex;
-  wrap: nowrap;
+  flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
 }
