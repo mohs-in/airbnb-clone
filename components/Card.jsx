@@ -1,6 +1,6 @@
 import React from 'react'
 import starLogo from '../src/assets/star.png'
-import { getImageUrl } from './utils.js';
+import { getImageUrl } from './imgs.js';
 
 
 function Card(props) {
