@@ -1,8 +1,7 @@
 import React from 'react'
 import starLogo from '../src/assets/star.png'
-import katieImg from '../public/katieImg.png'
-import mountainImg from '../public/mountainImg.png'
-import weddingImg from '../public/weddingImg.png'
+import { getImageUrl } from './utils.js';
+
 
 function Card(props) {
     let badgeText
@@ -11,11 +10,10 @@ function Card(props) {
     } else if(props.location === "Online") {
         badgeText = "ONLINE"
     }
-    
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <div className="card--img"><img src={`${props.coverImg}`} /></div>
+            <div className="card--img"><img src={getImageUrl(props.coverImg)} /></div>
             <div className="card--details">
                 <div className="card--rating">
                     <img src={starLogo} alt="Star Logo" />
