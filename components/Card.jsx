@@ -1,8 +1,8 @@
 import React from 'react'
 import starLogo from '../src/assets/star.png'
-import katieImg from '../public/katie-zaferes.png'
-import mountainImg from '../public/mountain-bike.png'
-import weddingImg from '../public/wedding-photography.png'
+import katieImg from '../public/katieImg.png'
+import mountainImg from '../public/mountainImg.png'
+import weddingImg from '../public/weddingImg.png'
 
 function Card(props) {
     let badgeText
@@ -15,7 +15,7 @@ function Card(props) {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <div className="card--img"><img src={`../public/${props.coverImg}`} /></div>
+            <div className="card--img"><img src={`${props.coverImg}`} /></div>
             <div className="card--details">
                 <div className="card--rating">
                     <img src={starLogo} alt="Star Logo" />
