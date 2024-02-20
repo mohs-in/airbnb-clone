@@ -15,11 +15,11 @@ function Card(props) {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <div className="card--img"><img src={`../public/${props.img}`} /></div>
+            <div className="card--img"><img src={`../public/${props.coverImg}`} /></div>
             <div className="card--details">
                 <div className="card--rating">
                     <img src={starLogo} alt="Star Logo" />
-                    <p>{props.rating} <span>({props.reviewCount})∙{props.country}</span></p>
+                    <p>{props.stats.rating} <span>({props.stats.reviewCount})∙{props.location}</span></p>
                 </div>
                 <p id='tagline'>{props.title}</p>
                 <p id='pricing'><span>From ${props.price} </span>/ person</p>
